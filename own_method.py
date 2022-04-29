@@ -103,12 +103,9 @@ def bm25(document_id, query_name):
         if document_id in inverted_index[query_term]:
             tf = inverted_index[query_term][document_id]
             Ld = document_lengths[document_id]
-            Lavg = average_document_length
             df = len(inverted_index[query_term])
             idf = num_documents/df
-            first_term = np.log(idf)
-            second_term = ((k1+1)*tf)/(k1*((1-b)+b*(Ld/Lavg))+tf)
-            score += first_term * second_term 
+            score += np.log(idf) * ((k1+1)*tf)/(k1*((1-b)+b*(Ld/average_document_length))+tf)
     return score
 
 

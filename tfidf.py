@@ -29,6 +29,7 @@ inverted_index = open('parsed_data/inverted_index.pickle', 'rb')
 inverted_index = pickle.load(inverted_index)
 
 
+start_time = time.time()
 num_documents = len(doc_dict)
 
 
@@ -51,7 +52,7 @@ def tfidf(document_id, query_name):
 
 results_store = collections.defaultdict(list)
 
-start_time = time.time()
+
 for query_name in query_dict:
 	for doc_id in range(num_documents):
 		score = tfidf(doc_id,query_name)
