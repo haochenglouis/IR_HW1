@@ -44,7 +44,7 @@ The above command will put the ranking results in **results/**
 Suppose trec folder and this folder are in the same repository. To get the evaluation results of tf-idf, simply run: 
 
 ```
-./trec_eval -m all_trec -q ../IR_HW1/raw_data/qrels.ohsu.88-91_trec_friendly ../IR_HW1/results/tfidf_results.out > ../IR_HW1_ori/results/tfidf_evaluation.out 
+./trec_eval -m all_trec -q ../IR_HW1/raw_data/qrels.ohsu.88-91_trec_friendly ../IR_HW1/results/tfidf_results.out > ../IR_HW1/results/tfidf_evaluation.out 
 ```
 
 'tfidf_evaluation.out' will contain many different evaluation measure results. 
