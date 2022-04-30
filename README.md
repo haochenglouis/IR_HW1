@@ -7,7 +7,7 @@ This repository is the implementation of the search engine for Homework 1 in the
 
 Python 3
 
-nltk toolkit (pip install nltk)
+[nltk toolkit](https://www.nltk.org) (pip install nltk)
 
 [trec_eval](https://github.com/usnistgov/trec_eval) (cd trec_eval; make)
 
@@ -16,7 +16,7 @@ nltk toolkit (pip install nltk)
 
 ### Downloading dataset: 
 
-Download the dataset from "[google drive](https://drive.google.com/drive/folders/1fhrFtDtDWsxRJ2ND0zapsiZJUwBU7-4a?usp=sharing)" and put all the file in **raw_data/**. In the raw data, "ohsumed.88-91" is the collection of the documents; "query.ohsu.88-91" is the query file; "query.ohsu.1-63" is the relevance file.
+Download the dataset from "[google drive](https://drive.google.com/drive/folders/1fhrFtDtDWsxRJ2ND0zapsiZJUwBU7-4a?usp=sharing)" and put all the file in **raw_data/**. In the raw data, "ohsumed.88-91" is the collection of the documents; "query.ohsu.88-91" is the query file; "qrels.ohsu.1-63" is the relevance file.
 
 
 ### Run data parser to generate inverted index
